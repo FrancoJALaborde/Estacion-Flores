@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c0e55e738d46458c766b084e7eb0e83 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8c0e55e738d46458c766b084e7eb0e83" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8c0e55e738d46458c766b084e7eb0e83 = L.map(
+                "map_8c0e55e738d46458c766b084e7eb0e83",
+                {
+                    center: [-31.43258, -64.252421],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07de020b17b1826faed2e5c7e6934fe0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_07de020b17b1826faed2e5c7e6934fe0.addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+            var rectangle_7a5ea6056a7dd186572153afc0ecf9f8 = L.rectangle(
+                [[-31.43258, -64.252421], [-31.451855, -64.249607]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+            var marker_ca6fb6f6a6e507a2a84967e820eb44a0 = L.marker(
+                [-31.434714168637672, -64.25013138755655],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_a645c80feb7ce5d7ce7fe56d643aaad8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14a551b776295ecae13443634544abac = $(`<div id="html_14a551b776295ecae13443634544abac" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 1<br>robo: 7<br>hurto: 1<br>vandalismo: 1<br>Fecha: 03/12/2016</div>`)[0];
+                popup_a645c80feb7ce5d7ce7fe56d643aaad8.setContent(html_14a551b776295ecae13443634544abac);
+            
+        
+
+        marker_ca6fb6f6a6e507a2a84967e820eb44a0.bindPopup(popup_a645c80feb7ce5d7ce7fe56d643aaad8)
+        ;
+
+        
+    
+    
+            var marker_d6c8555035de141661e4be2656105222 = L.marker(
+                [-31.447621289388888, -64.2512379686451],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_dd3d67bd547e992ce36e7ba44c0022b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee6c9043bbad6cfd4e85eec93b227951 = $(`<div id="html_ee6c9043bbad6cfd4e85eec93b227951" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 2<br>robo: 6<br>hurto: 3<br>vandalismo: 1<br>Fecha: 31/03/2016</div>`)[0];
+                popup_dd3d67bd547e992ce36e7ba44c0022b9.setContent(html_ee6c9043bbad6cfd4e85eec93b227951);
+            
+        
+
+        marker_d6c8555035de141661e4be2656105222.bindPopup(popup_dd3d67bd547e992ce36e7ba44c0022b9)
+        ;
+
+        
+    
+    
+            var marker_0b26e0d0b8d7772e009807689c8c053f = L.marker(
+                [-31.43319642236094, -64.25089728034442],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_b6b6a8837b64545e74479c0f0f58b552 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd99fc69ab9660d586bd729711863c87 = $(`<div id="html_cd99fc69ab9660d586bd729711863c87" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 3<br>robo: 8<br>hurto: 6<br>vandalismo: 2<br>Fecha: 11/09/2017</div>`)[0];
+                popup_b6b6a8837b64545e74479c0f0f58b552.setContent(html_cd99fc69ab9660d586bd729711863c87);
+            
+        
+
+        marker_0b26e0d0b8d7772e009807689c8c053f.bindPopup(popup_b6b6a8837b64545e74479c0f0f58b552)
+        ;
+
+        
+    
+    
+            var marker_c29d492b8c38116b9dbb02801cfec2b8 = L.marker(
+                [-31.447891956126337, -64.2499996188254],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_d2e5135736a56a8828541ff7c835d880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dac822026867906f1d94c470907ec6fe = $(`<div id="html_dac822026867906f1d94c470907ec6fe" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 4<br>robo: 10<br>hurto: 10<br>vandalismo: 7<br>Fecha: 27/02/2015</div>`)[0];
+                popup_d2e5135736a56a8828541ff7c835d880.setContent(html_dac822026867906f1d94c470907ec6fe);
+            
+        
+
+        marker_c29d492b8c38116b9dbb02801cfec2b8.bindPopup(popup_d2e5135736a56a8828541ff7c835d880)
+        ;
+
+        
+    
+    
+            var marker_2278ed94e2528ab89e1f32ff09883863 = L.marker(
+                [-31.436326616077693, -64.25097451705389],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_18f15545f4c42c8343c8bf3c7bc2642b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f860a4a88afe075c89349a6087b2b01 = $(`<div id="html_3f860a4a88afe075c89349a6087b2b01" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 5<br>robo: 5<br>hurto: 5<br>vandalismo: 7<br>Fecha: 07/03/2016</div>`)[0];
+                popup_18f15545f4c42c8343c8bf3c7bc2642b.setContent(html_3f860a4a88afe075c89349a6087b2b01);
+            
+        
+
+        marker_2278ed94e2528ab89e1f32ff09883863.bindPopup(popup_18f15545f4c42c8343c8bf3c7bc2642b)
+        ;
+
+        
+    
+    
+            var marker_90b60ca72afabd219b3879e2c293dc3b = L.marker(
+                [-31.444681942949654, -64.25148865314088],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_c51460f5169d38a06a79ddc0c4a58e67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df190d6b9aba64e29f78028210cf685b = $(`<div id="html_df190d6b9aba64e29f78028210cf685b" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 6<br>robo: 10<br>hurto: 2<br>vandalismo: 9<br>Fecha: 11/01/2019</div>`)[0];
+                popup_c51460f5169d38a06a79ddc0c4a58e67.setContent(html_df190d6b9aba64e29f78028210cf685b);
+            
+        
+
+        marker_90b60ca72afabd219b3879e2c293dc3b.bindPopup(popup_c51460f5169d38a06a79ddc0c4a58e67)
+        ;
+
+        
+    
+    
+            var marker_eb626fcfc0b2239dc1d0749bc925ffa6 = L.marker(
+                [-31.440610376085147, -64.25082669650678],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_e570eb02feb63c5a0d9e12d320347f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4252d11ad8682a4d1c0d3061a9737bd = $(`<div id="html_c4252d11ad8682a4d1c0d3061a9737bd" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 7<br>robo: 7<br>hurto: 1<br>vandalismo: 6<br>Fecha: 17/01/2019</div>`)[0];
+                popup_e570eb02feb63c5a0d9e12d320347f8d.setContent(html_c4252d11ad8682a4d1c0d3061a9737bd);
+            
+        
+
+        marker_eb626fcfc0b2239dc1d0749bc925ffa6.bindPopup(popup_e570eb02feb63c5a0d9e12d320347f8d)
+        ;
+
+        
+    
+    
+            var marker_2b5aa1ec0c3b0661abaf2057a7cda3f7 = L.marker(
+                [-31.433337135161754, -64.25199487710867],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_dfdad3a2401104a7adc334251014cdaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34e7381a881145e0aa7f3d55b0033372 = $(`<div id="html_34e7381a881145e0aa7f3d55b0033372" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 8<br>robo: 9<br>hurto: 1<br>vandalismo: 5<br>Fecha: 18/11/2021</div>`)[0];
+                popup_dfdad3a2401104a7adc334251014cdaa.setContent(html_34e7381a881145e0aa7f3d55b0033372);
+            
+        
+
+        marker_2b5aa1ec0c3b0661abaf2057a7cda3f7.bindPopup(popup_dfdad3a2401104a7adc334251014cdaa)
+        ;
+
+        
+    
+    
+            var marker_10d31d423fd80229d6aedf4996e50637 = L.marker(
+                [-31.44662274578601, -64.25073213193596],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_a8bcefe06c8516492a12b100367e5674 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b40a9562c7bb146139362eff310d41ac = $(`<div id="html_b40a9562c7bb146139362eff310d41ac" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 9<br>robo: 2<br>hurto: 4<br>vandalismo: 4<br>Fecha: 02/01/2016</div>`)[0];
+                popup_a8bcefe06c8516492a12b100367e5674.setContent(html_b40a9562c7bb146139362eff310d41ac);
+            
+        
+
+        marker_10d31d423fd80229d6aedf4996e50637.bindPopup(popup_a8bcefe06c8516492a12b100367e5674)
+        ;
+
+        
+    
+    
+            var marker_0426c2b4553d9d5bce1803500ed02856 = L.marker(
+                [-31.441372061890124, -64.25136893216775],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_996c06f158f036a471ada0b718ac5aaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6edeb90b0d4d83e289e5ad07b817a138 = $(`<div id="html_6edeb90b0d4d83e289e5ad07b817a138" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 10<br>robo: 5<br>hurto: 5<br>vandalismo: 6<br>Fecha: 25/04/2014</div>`)[0];
+                popup_996c06f158f036a471ada0b718ac5aaa.setContent(html_6edeb90b0d4d83e289e5ad07b817a138);
+            
+        
+
+        marker_0426c2b4553d9d5bce1803500ed02856.bindPopup(popup_996c06f158f036a471ada0b718ac5aaa)
+        ;
+
+        
+    
+    
+            var marker_0e29f1ffc33fc13e75f9829a31524ccb = L.marker(
+                [-31.441325089413453, -64.24963823143376],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_446518928eed75f83d0511caaef76131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3bd5646b39e5ddeff6bde55090e950e = $(`<div id="html_f3bd5646b39e5ddeff6bde55090e950e" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 11<br>robo: 9<br>hurto: 5<br>vandalismo: 9<br>Fecha: 09/01/2010</div>`)[0];
+                popup_446518928eed75f83d0511caaef76131.setContent(html_f3bd5646b39e5ddeff6bde55090e950e);
+            
+        
+
+        marker_0e29f1ffc33fc13e75f9829a31524ccb.bindPopup(popup_446518928eed75f83d0511caaef76131)
+        ;
+
+        
+    
+    
+            var marker_6d5f4dd2e533f0648f3d02def034c43d = L.marker(
+                [-31.451602549156966, -64.25078746613528],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_2c87fdba40283362ce9d30855d31bf61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fcd2680c10e385f851876c3621c9736 = $(`<div id="html_0fcd2680c10e385f851876c3621c9736" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 12<br>robo: 6<br>hurto: 10<br>vandalismo: 5<br>Fecha: 04/12/2013</div>`)[0];
+                popup_2c87fdba40283362ce9d30855d31bf61.setContent(html_0fcd2680c10e385f851876c3621c9736);
+            
+        
+
+        marker_6d5f4dd2e533f0648f3d02def034c43d.bindPopup(popup_2c87fdba40283362ce9d30855d31bf61)
+        ;
+
+        
+    
+    
+            var marker_e924dc3534901f2b984ce566532a71e5 = L.marker(
+                [-31.442475846345076, -64.25082528253475],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_477c05845ae768aa0a8043bf328e9972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b5d5537a196fd08967be1654e0d13b4 = $(`<div id="html_2b5d5537a196fd08967be1654e0d13b4" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 13<br>robo: 1<br>hurto: 8<br>vandalismo: 4<br>Fecha: 07/03/2017</div>`)[0];
+                popup_477c05845ae768aa0a8043bf328e9972.setContent(html_2b5d5537a196fd08967be1654e0d13b4);
+            
+        
+
+        marker_e924dc3534901f2b984ce566532a71e5.bindPopup(popup_477c05845ae768aa0a8043bf328e9972)
+        ;
+
+        
+    
+    
+            var marker_9258934c0e20ffc39c92e64fb68c0518 = L.marker(
+                [-31.43366172766202, -64.25053041363402],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_0ea52dc65d95db81f7c383c23c063f8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab752a235854cca206ba70c9b9998ff = $(`<div id="html_eab752a235854cca206ba70c9b9998ff" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 14<br>robo: 4<br>hurto: 8<br>vandalismo: 2<br>Fecha: 17/04/2013</div>`)[0];
+                popup_0ea52dc65d95db81f7c383c23c063f8b.setContent(html_eab752a235854cca206ba70c9b9998ff);
+            
+        
+
+        marker_9258934c0e20ffc39c92e64fb68c0518.bindPopup(popup_0ea52dc65d95db81f7c383c23c063f8b)
+        ;
+
+        
+    
+    
+            var marker_dadb720fef6f06fde39a176b90d32493 = L.marker(
+                [-31.445647254445284, -64.25135624943331],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_806fc4cd210889e050067042b6b48628 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43862ddaf190081139de76b3459ca28e = $(`<div id="html_43862ddaf190081139de76b3459ca28e" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 15<br>robo: 9<br>hurto: 9<br>vandalismo: 10<br>Fecha: 16/10/2012</div>`)[0];
+                popup_806fc4cd210889e050067042b6b48628.setContent(html_43862ddaf190081139de76b3459ca28e);
+            
+        
+
+        marker_dadb720fef6f06fde39a176b90d32493.bindPopup(popup_806fc4cd210889e050067042b6b48628)
+        ;
+
+        
+    
+    
+            var marker_76fe7e12901f833a5e0560d9dfd296ad = L.marker(
+                [-31.433056757703202, -64.25003705512749],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_646688661042ef87f28c5e79392821e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6840fdef66a1acbdff47a8ccdd19cee = $(`<div id="html_c6840fdef66a1acbdff47a8ccdd19cee" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 16<br>robo: 1<br>hurto: 1<br>vandalismo: 4<br>Fecha: 28/03/2017</div>`)[0];
+                popup_646688661042ef87f28c5e79392821e7.setContent(html_c6840fdef66a1acbdff47a8ccdd19cee);
+            
+        
+
+        marker_76fe7e12901f833a5e0560d9dfd296ad.bindPopup(popup_646688661042ef87f28c5e79392821e7)
+        ;
+
+        
+    
+    
+            var marker_69171a9c42f6176ec0087f0bc2a99210 = L.marker(
+                [-31.445300389276877, -64.25214098402496],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_a6ba7ae4d3f1e258e7e91d98d2a3eb04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8137f00f3128db2c35a82521c972ea96 = $(`<div id="html_8137f00f3128db2c35a82521c972ea96" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 17<br>robo: 8<br>hurto: 1<br>vandalismo: 6<br>Fecha: 13/10/2021</div>`)[0];
+                popup_a6ba7ae4d3f1e258e7e91d98d2a3eb04.setContent(html_8137f00f3128db2c35a82521c972ea96);
+            
+        
+
+        marker_69171a9c42f6176ec0087f0bc2a99210.bindPopup(popup_a6ba7ae4d3f1e258e7e91d98d2a3eb04)
+        ;
+
+        
+    
+    
+            var marker_bbe5c0e48ca6062b962db8e5f9a833a6 = L.marker(
+                [-31.450226634608374, -64.25098528136138],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_456d1fd0e6ed85ee5b8f1b8d2e894457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_779f1a3ed9637afe778534b65e8ac757 = $(`<div id="html_779f1a3ed9637afe778534b65e8ac757" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 18<br>robo: 2<br>hurto: 3<br>vandalismo: 6<br>Fecha: 25/08/2017</div>`)[0];
+                popup_456d1fd0e6ed85ee5b8f1b8d2e894457.setContent(html_779f1a3ed9637afe778534b65e8ac757);
+            
+        
+
+        marker_bbe5c0e48ca6062b962db8e5f9a833a6.bindPopup(popup_456d1fd0e6ed85ee5b8f1b8d2e894457)
+        ;
+
+        
+    
+    
+            var marker_4817ce7aaff3028dcb76c8deda38e3b1 = L.marker(
+                [-31.447106707113534, -64.25072019232162],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_b99cc337477acaf1a33482831618420a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a19242df39ade9db71f15991d275204 = $(`<div id="html_3a19242df39ade9db71f15991d275204" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 19<br>robo: 5<br>hurto: 5<br>vandalismo: 4<br>Fecha: 28/03/2019</div>`)[0];
+                popup_b99cc337477acaf1a33482831618420a.setContent(html_3a19242df39ade9db71f15991d275204);
+            
+        
+
+        marker_4817ce7aaff3028dcb76c8deda38e3b1.bindPopup(popup_b99cc337477acaf1a33482831618420a)
+        ;
+
+        
+    
+    
+            var marker_8debeadedc9c57358a563e5e9139a99a = L.marker(
+                [-31.436498584186136, -64.25011259390229],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_c66d4b74f484102bf7d712205ff53284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a84bb7110436a720e9a991bdbbba3559 = $(`<div id="html_a84bb7110436a720e9a991bdbbba3559" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 20<br>robo: 9<br>hurto: 3<br>vandalismo: 7<br>Fecha: 09/10/2017</div>`)[0];
+                popup_c66d4b74f484102bf7d712205ff53284.setContent(html_a84bb7110436a720e9a991bdbbba3559);
+            
+        
+
+        marker_8debeadedc9c57358a563e5e9139a99a.bindPopup(popup_c66d4b74f484102bf7d712205ff53284)
+        ;
+
+        
+    
+    
+            var marker_87c42979554e7676121739d963e5eb31 = L.marker(
+                [-31.4355130342908, -64.25214456778757],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_27db81dae0b3e285db02d8e4c068af7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61540e1f0b57723aec50dc4375a44560 = $(`<div id="html_61540e1f0b57723aec50dc4375a44560" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 21<br>robo: 8<br>hurto: 9<br>vandalismo: 2<br>Fecha: 30/03/2015</div>`)[0];
+                popup_27db81dae0b3e285db02d8e4c068af7e.setContent(html_61540e1f0b57723aec50dc4375a44560);
+            
+        
+
+        marker_87c42979554e7676121739d963e5eb31.bindPopup(popup_27db81dae0b3e285db02d8e4c068af7e)
+        ;
+
+        
+    
+    
+            var marker_982289ca173bfb07a03f8da3863a35e0 = L.marker(
+                [-31.43575809880274, -64.25231730125311],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_3d3f241fe6cd83ef3ef80e1d31937278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1949c6e1e0d58d201f2795b5e73cf743 = $(`<div id="html_1949c6e1e0d58d201f2795b5e73cf743" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 22<br>robo: 1<br>hurto: 2<br>vandalismo: 6<br>Fecha: 25/04/2016</div>`)[0];
+                popup_3d3f241fe6cd83ef3ef80e1d31937278.setContent(html_1949c6e1e0d58d201f2795b5e73cf743);
+            
+        
+
+        marker_982289ca173bfb07a03f8da3863a35e0.bindPopup(popup_3d3f241fe6cd83ef3ef80e1d31937278)
+        ;
+
+        
+    
+    
+            var marker_9727c10465705bb170343b7d504ff9d6 = L.marker(
+                [-31.436178507929107, -64.2502703326824],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_2b7e8380b51e658a5f0a3836fa1efa26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec1919b854b7b061568be747bc62c6cf = $(`<div id="html_ec1919b854b7b061568be747bc62c6cf" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 23<br>robo: 8<br>hurto: 6<br>vandalismo: 6<br>Fecha: 25/06/2016</div>`)[0];
+                popup_2b7e8380b51e658a5f0a3836fa1efa26.setContent(html_ec1919b854b7b061568be747bc62c6cf);
+            
+        
+
+        marker_9727c10465705bb170343b7d504ff9d6.bindPopup(popup_2b7e8380b51e658a5f0a3836fa1efa26)
+        ;
+
+        
+    
+    
+            var marker_02e2d4ba24f28ed980449bb60a6e76ce = L.marker(
+                [-31.44842246081402, -64.24971338595307],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_7664fc08415f7a7e00dd7119a4f62cfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78f39fbc0cd559987ba51d35e88865b1 = $(`<div id="html_78f39fbc0cd559987ba51d35e88865b1" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 24<br>robo: 10<br>hurto: 2<br>vandalismo: 10<br>Fecha: 22/10/2014</div>`)[0];
+                popup_7664fc08415f7a7e00dd7119a4f62cfa.setContent(html_78f39fbc0cd559987ba51d35e88865b1);
+            
+        
+
+        marker_02e2d4ba24f28ed980449bb60a6e76ce.bindPopup(popup_7664fc08415f7a7e00dd7119a4f62cfa)
+        ;
+
+        
+    
+    
+            var marker_e4d30e7403bbc2f3d197a7acfb711077 = L.marker(
+                [-31.440999085017307, -64.25213667533659],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_1500477f19dfd84e4331ce450a620703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10f3ef89c2b1a8d1f93beb5f2c54f812 = $(`<div id="html_10f3ef89c2b1a8d1f93beb5f2c54f812" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 25<br>robo: 4<br>hurto: 8<br>vandalismo: 1<br>Fecha: 15/10/2011</div>`)[0];
+                popup_1500477f19dfd84e4331ce450a620703.setContent(html_10f3ef89c2b1a8d1f93beb5f2c54f812);
+            
+        
+
+        marker_e4d30e7403bbc2f3d197a7acfb711077.bindPopup(popup_1500477f19dfd84e4331ce450a620703)
+        ;
+
+        
+    
+    
+            var marker_e719dd79ea45bedb0ac28b9204523bbe = L.marker(
+                [-31.441110128244496, -64.2516073988266],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_3f6ce16ee0e06f59830e4a5936e7bbb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c9d0e1005cb76c293fb7d593f79779b = $(`<div id="html_2c9d0e1005cb76c293fb7d593f79779b" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 26<br>robo: 5<br>hurto: 4<br>vandalismo: 8<br>Fecha: 21/01/2019</div>`)[0];
+                popup_3f6ce16ee0e06f59830e4a5936e7bbb3.setContent(html_2c9d0e1005cb76c293fb7d593f79779b);
+            
+        
+
+        marker_e719dd79ea45bedb0ac28b9204523bbe.bindPopup(popup_3f6ce16ee0e06f59830e4a5936e7bbb3)
+        ;
+
+        
+    
+    
+            var marker_98b8f9f2ede37bbca93b0fece82d4649 = L.marker(
+                [-31.445511980588442, -64.25200100405239],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_d17dffd73083aad91cc85f2b0a6b6705 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_157f597b3a64f1b227072c05321950ea = $(`<div id="html_157f597b3a64f1b227072c05321950ea" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 27<br>robo: 10<br>hurto: 4<br>vandalismo: 10<br>Fecha: 18/08/2019</div>`)[0];
+                popup_d17dffd73083aad91cc85f2b0a6b6705.setContent(html_157f597b3a64f1b227072c05321950ea);
+            
+        
+
+        marker_98b8f9f2ede37bbca93b0fece82d4649.bindPopup(popup_d17dffd73083aad91cc85f2b0a6b6705)
+        ;
+
+        
+    
+    
+            var marker_1d124f6b3995700a687cb0f9de44465e = L.marker(
+                [-31.4508885752362, -64.25056468363753],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_22e179db2cd07363308dfd155982953e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_208c3e2e4a976b0a3dfe9f9f3445400d = $(`<div id="html_208c3e2e4a976b0a3dfe9f9f3445400d" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 28<br>robo: 8<br>hurto: 1<br>vandalismo: 9<br>Fecha: 07/11/2011</div>`)[0];
+                popup_22e179db2cd07363308dfd155982953e.setContent(html_208c3e2e4a976b0a3dfe9f9f3445400d);
+            
+        
+
+        marker_1d124f6b3995700a687cb0f9de44465e.bindPopup(popup_22e179db2cd07363308dfd155982953e)
+        ;
+
+        
+    
+    
+            var marker_0e9b095084a346681d93f0bfc874ed6d = L.marker(
+                [-31.443051051267428, -64.2512894660281],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_22ae974fdc95e19103107b9e1dda163a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6082cb701cbd603009fa2babae30c861 = $(`<div id="html_6082cb701cbd603009fa2babae30c861" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 29<br>robo: 2<br>hurto: 6<br>vandalismo: 9<br>Fecha: 12/01/2012</div>`)[0];
+                popup_22ae974fdc95e19103107b9e1dda163a.setContent(html_6082cb701cbd603009fa2babae30c861);
+            
+        
+
+        marker_0e9b095084a346681d93f0bfc874ed6d.bindPopup(popup_22ae974fdc95e19103107b9e1dda163a)
+        ;
+
+        
+    
+    
+            var marker_26c99668c5b0a8db92a2fcc52b8c9d70 = L.marker(
+                [-31.435076562188126, -64.250440202245],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_63cd099f427687bd518da4c1110551f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c4873ed66c12a7a58ce37a8be91e21 = $(`<div id="html_e9c4873ed66c12a7a58ce37a8be91e21" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 30<br>robo: 8<br>hurto: 3<br>vandalismo: 5<br>Fecha: 08/02/2010</div>`)[0];
+                popup_63cd099f427687bd518da4c1110551f8.setContent(html_e9c4873ed66c12a7a58ce37a8be91e21);
+            
+        
+
+        marker_26c99668c5b0a8db92a2fcc52b8c9d70.bindPopup(popup_63cd099f427687bd518da4c1110551f8)
+        ;
+
+        
+    
+    
+            var marker_f2451148f7a1caca1ee2ae01c986387b = L.marker(
+                [-31.441336361194367, -64.24985633486473],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_242261f4173b350e8758bbfde91ab1ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c71b211ab743ca5832b6109f62a47d82 = $(`<div id="html_c71b211ab743ca5832b6109f62a47d82" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 31<br>robo: 5<br>hurto: 9<br>vandalismo: 9<br>Fecha: 31/08/2015</div>`)[0];
+                popup_242261f4173b350e8758bbfde91ab1ba.setContent(html_c71b211ab743ca5832b6109f62a47d82);
+            
+        
+
+        marker_f2451148f7a1caca1ee2ae01c986387b.bindPopup(popup_242261f4173b350e8758bbfde91ab1ba)
+        ;
+
+        
+    
+    
+            var marker_c0a70728721d974a6d8f8620ab88d098 = L.marker(
+                [-31.439308580705593, -64.25131875206193],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_63eeb9dbce80035a111938dca91f8d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82323d8c39b350842197fa163229db2b = $(`<div id="html_82323d8c39b350842197fa163229db2b" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 32<br>robo: 7<br>hurto: 1<br>vandalismo: 2<br>Fecha: 06/11/2014</div>`)[0];
+                popup_63eeb9dbce80035a111938dca91f8d86.setContent(html_82323d8c39b350842197fa163229db2b);
+            
+        
+
+        marker_c0a70728721d974a6d8f8620ab88d098.bindPopup(popup_63eeb9dbce80035a111938dca91f8d86)
+        ;
+
+        
+    
+    
+            var marker_68cbbb7eb0d510837fc10c6558010e36 = L.marker(
+                [-31.447940758627603, -64.25128610185418],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_3bae4159860d4d848c5e155e4bbe5597 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d158dd1f20503703eb674e47c5416195 = $(`<div id="html_d158dd1f20503703eb674e47c5416195" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 33<br>robo: 2<br>hurto: 4<br>vandalismo: 8<br>Fecha: 20/05/2014</div>`)[0];
+                popup_3bae4159860d4d848c5e155e4bbe5597.setContent(html_d158dd1f20503703eb674e47c5416195);
+            
+        
+
+        marker_68cbbb7eb0d510837fc10c6558010e36.bindPopup(popup_3bae4159860d4d848c5e155e4bbe5597)
+        ;
+
+        
+    
+    
+            var marker_6faed58b353263bae42a148f7e490b00 = L.marker(
+                [-31.449135801807337, -64.25160244335738],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_04e06c582f2d597b9454b30d21b10dd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc8e55c9a1e671feed215970c493909c = $(`<div id="html_cc8e55c9a1e671feed215970c493909c" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 34<br>robo: 3<br>hurto: 7<br>vandalismo: 5<br>Fecha: 19/07/2020</div>`)[0];
+                popup_04e06c582f2d597b9454b30d21b10dd1.setContent(html_cc8e55c9a1e671feed215970c493909c);
+            
+        
+
+        marker_6faed58b353263bae42a148f7e490b00.bindPopup(popup_04e06c582f2d597b9454b30d21b10dd1)
+        ;
+
+        
+    
+    
+            var marker_36c7a9e64a706788bc7b2e5ed1b766d7 = L.marker(
+                [-31.438499228635482, -64.25151828111858],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_7310dd412755832c57e40d52b04d0a23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddffc5bc90c4c60a0d5e9ea0a717ed26 = $(`<div id="html_ddffc5bc90c4c60a0d5e9ea0a717ed26" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 35<br>robo: 5<br>hurto: 5<br>vandalismo: 5<br>Fecha: 04/08/2020</div>`)[0];
+                popup_7310dd412755832c57e40d52b04d0a23.setContent(html_ddffc5bc90c4c60a0d5e9ea0a717ed26);
+            
+        
+
+        marker_36c7a9e64a706788bc7b2e5ed1b766d7.bindPopup(popup_7310dd412755832c57e40d52b04d0a23)
+        ;
+
+        
+    
+    
+            var marker_cd66c3b45c82dc74d076dd4c21a5e788 = L.marker(
+                [-31.44309150783018, -64.25065231234959],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_f43edfafae7495f7ec0e1a2cbea33351 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d49fe566eea8a3e72c4dcce4e2dc9f5c = $(`<div id="html_d49fe566eea8a3e72c4dcce4e2dc9f5c" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 36<br>robo: 6<br>hurto: 8<br>vandalismo: 4<br>Fecha: 29/06/2015</div>`)[0];
+                popup_f43edfafae7495f7ec0e1a2cbea33351.setContent(html_d49fe566eea8a3e72c4dcce4e2dc9f5c);
+            
+        
+
+        marker_cd66c3b45c82dc74d076dd4c21a5e788.bindPopup(popup_f43edfafae7495f7ec0e1a2cbea33351)
+        ;
+
+        
+    
+    
+            var marker_610cb7cc6e7675b536b7dcf770de8f06 = L.marker(
+                [-31.450482116652868, -64.25155136434773],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_7190c104b6391599cab9bf8baa8e7cef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffaa5bab8367f63ba5c5e01145099395 = $(`<div id="html_ffaa5bab8367f63ba5c5e01145099395" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 37<br>robo: 10<br>hurto: 7<br>vandalismo: 3<br>Fecha: 16/05/2016</div>`)[0];
+                popup_7190c104b6391599cab9bf8baa8e7cef.setContent(html_ffaa5bab8367f63ba5c5e01145099395);
+            
+        
+
+        marker_610cb7cc6e7675b536b7dcf770de8f06.bindPopup(popup_7190c104b6391599cab9bf8baa8e7cef)
+        ;
+
+        
+    
+    
+            var marker_5565b34c23f7c3ea5c16de86fe8b2a2a = L.marker(
+                [-31.43295167844841, -64.25002606145536],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_ffaf1dbdab2d1da83898eaba25070c30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4b856448e45e147a8624f378b9436ea = $(`<div id="html_d4b856448e45e147a8624f378b9436ea" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 38<br>robo: 7<br>hurto: 10<br>vandalismo: 7<br>Fecha: 05/06/2015</div>`)[0];
+                popup_ffaf1dbdab2d1da83898eaba25070c30.setContent(html_d4b856448e45e147a8624f378b9436ea);
+            
+        
+
+        marker_5565b34c23f7c3ea5c16de86fe8b2a2a.bindPopup(popup_ffaf1dbdab2d1da83898eaba25070c30)
+        ;
+
+        
+    
+    
+            var marker_ad788600b4647fcd3f448a96b7a66803 = L.marker(
+                [-31.4418117463316, -64.25136842124432],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_c70b8f97fb70f29f89d2e592e7e8907f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7d09621a89183754f90b2fdc3f21953 = $(`<div id="html_c7d09621a89183754f90b2fdc3f21953" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 39<br>robo: 2<br>hurto: 1<br>vandalismo: 10<br>Fecha: 23/11/2021</div>`)[0];
+                popup_c70b8f97fb70f29f89d2e592e7e8907f.setContent(html_c7d09621a89183754f90b2fdc3f21953);
+            
+        
+
+        marker_ad788600b4647fcd3f448a96b7a66803.bindPopup(popup_c70b8f97fb70f29f89d2e592e7e8907f)
+        ;
+
+        
+    
+    
+            var marker_4365bed093c17e00d9b88e4c11f32169 = L.marker(
+                [-31.44730505176353, -64.25209907372277],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_1cbe4a400bfb0c98ef3ad7a8e2243042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51dac2761d883c0c8992a216deb5054f = $(`<div id="html_51dac2761d883c0c8992a216deb5054f" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 40<br>robo: 9<br>hurto: 9<br>vandalismo: 4<br>Fecha: 13/04/2018</div>`)[0];
+                popup_1cbe4a400bfb0c98ef3ad7a8e2243042.setContent(html_51dac2761d883c0c8992a216deb5054f);
+            
+        
+
+        marker_4365bed093c17e00d9b88e4c11f32169.bindPopup(popup_1cbe4a400bfb0c98ef3ad7a8e2243042)
+        ;
+
+        
+    
+    
+            var marker_548b9f0a5edddc647ac2c2ec7d19a846 = L.marker(
+                [-31.440322728774262, -64.25197233751472],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_1b296fa0ac87f9d639ac0f5d2e31a30b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0df3f0c2b1750b40678bf6bde12dbf6e = $(`<div id="html_0df3f0c2b1750b40678bf6bde12dbf6e" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 41<br>robo: 5<br>hurto: 3<br>vandalismo: 8<br>Fecha: 31/12/2014</div>`)[0];
+                popup_1b296fa0ac87f9d639ac0f5d2e31a30b.setContent(html_0df3f0c2b1750b40678bf6bde12dbf6e);
+            
+        
+
+        marker_548b9f0a5edddc647ac2c2ec7d19a846.bindPopup(popup_1b296fa0ac87f9d639ac0f5d2e31a30b)
+        ;
+
+        
+    
+    
+            var marker_4749e4a54556fc9e1c50b5ecafa030fc = L.marker(
+                [-31.44700618500389, -64.25154019150321],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_e852c38f1fd9e14045eac53b62c5e581 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_579d6e347e5d810b01df3af1d6e1afe5 = $(`<div id="html_579d6e347e5d810b01df3af1d6e1afe5" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 42<br>robo: 6<br>hurto: 2<br>vandalismo: 5<br>Fecha: 11/09/2021</div>`)[0];
+                popup_e852c38f1fd9e14045eac53b62c5e581.setContent(html_579d6e347e5d810b01df3af1d6e1afe5);
+            
+        
+
+        marker_4749e4a54556fc9e1c50b5ecafa030fc.bindPopup(popup_e852c38f1fd9e14045eac53b62c5e581)
+        ;
+
+        
+    
+    
+            var marker_508def715227e5b47c2afd1f4a99efc5 = L.marker(
+                [-31.447452016692083, -64.250421258447],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_895f7e64e41f4787996eacaa1169baa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2bce2789183684e37d3a647ca56f36b = $(`<div id="html_d2bce2789183684e37d3a647ca56f36b" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 43<br>robo: 9<br>hurto: 3<br>vandalismo: 8<br>Fecha: 10/01/2017</div>`)[0];
+                popup_895f7e64e41f4787996eacaa1169baa9.setContent(html_d2bce2789183684e37d3a647ca56f36b);
+            
+        
+
+        marker_508def715227e5b47c2afd1f4a99efc5.bindPopup(popup_895f7e64e41f4787996eacaa1169baa9)
+        ;
+
+        
+    
+    
+            var marker_0bea8b9a4047382a30d7a9d4cf9cf60d = L.marker(
+                [-31.44352986905109, -64.25195198088413],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_618887b02032b3b1aca84ec931e4f6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3896a8a277476488052c2215f1c644ad = $(`<div id="html_3896a8a277476488052c2215f1c644ad" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 44<br>robo: 1<br>hurto: 2<br>vandalismo: 6<br>Fecha: 07/09/2016</div>`)[0];
+                popup_618887b02032b3b1aca84ec931e4f6b8.setContent(html_3896a8a277476488052c2215f1c644ad);
+            
+        
+
+        marker_0bea8b9a4047382a30d7a9d4cf9cf60d.bindPopup(popup_618887b02032b3b1aca84ec931e4f6b8)
+        ;
+
+        
+    
+    
+            var marker_e4fd73fb953ef2d94e7dcbb0964bdadf = L.marker(
+                [-31.446117694099918, -64.25118921392618],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_750e87783aae6c560b19c44c30fd725b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f65f3971e38f2428774af570b3b95d = $(`<div id="html_27f65f3971e38f2428774af570b3b95d" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 45<br>robo: 1<br>hurto: 3<br>vandalismo: 3<br>Fecha: 12/01/2020</div>`)[0];
+                popup_750e87783aae6c560b19c44c30fd725b.setContent(html_27f65f3971e38f2428774af570b3b95d);
+            
+        
+
+        marker_e4fd73fb953ef2d94e7dcbb0964bdadf.bindPopup(popup_750e87783aae6c560b19c44c30fd725b)
+        ;
+
+        
+    
+    
+            var marker_89f110f028f2beb78b7b738e9f209b90 = L.marker(
+                [-31.44918791882241, -64.25028115370972],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_3a7450bc19c175926fd8f398c3cbebe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baf9666f0eff393efdca10720b0a11b3 = $(`<div id="html_baf9666f0eff393efdca10720b0a11b3" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 46<br>robo: 3<br>hurto: 9<br>vandalismo: 7<br>Fecha: 30/07/2012</div>`)[0];
+                popup_3a7450bc19c175926fd8f398c3cbebe7.setContent(html_baf9666f0eff393efdca10720b0a11b3);
+            
+        
+
+        marker_89f110f028f2beb78b7b738e9f209b90.bindPopup(popup_3a7450bc19c175926fd8f398c3cbebe7)
+        ;
+
+        
+    
+    
+            var marker_536704b5e13571afbd9f5a3106db5e3d = L.marker(
+                [-31.4384212293912, -64.25051104150263],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_db4a3d34e079ab1be38c1ab428860cf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af5efce1e04fdc146553d3869b5ae52e = $(`<div id="html_af5efce1e04fdc146553d3869b5ae52e" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 47<br>robo: 6<br>hurto: 5<br>vandalismo: 8<br>Fecha: 03/05/2017</div>`)[0];
+                popup_db4a3d34e079ab1be38c1ab428860cf7.setContent(html_af5efce1e04fdc146553d3869b5ae52e);
+            
+        
+
+        marker_536704b5e13571afbd9f5a3106db5e3d.bindPopup(popup_db4a3d34e079ab1be38c1ab428860cf7)
+        ;
+
+        
+    
+    
+            var marker_9fc100b7ec5151c7205f70a01505e6a6 = L.marker(
+                [-31.44583377733105, -64.25197378094146],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_9301c999c625e7be59e92ebb8e3c0c6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cebaa508d653fd9a5bdd4f603341421 = $(`<div id="html_9cebaa508d653fd9a5bdd4f603341421" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 48<br>robo: 4<br>hurto: 4<br>vandalismo: 2<br>Fecha: 08/08/2015</div>`)[0];
+                popup_9301c999c625e7be59e92ebb8e3c0c6d.setContent(html_9cebaa508d653fd9a5bdd4f603341421);
+            
+        
+
+        marker_9fc100b7ec5151c7205f70a01505e6a6.bindPopup(popup_9301c999c625e7be59e92ebb8e3c0c6d)
+        ;
+
+        
+    
+    
+            var marker_325626707adeb35537dc41bb8406dbc2 = L.marker(
+                [-31.434588583094747, -64.25181081460516],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_138c60c84e4ef96a6e5b9c06e08e7452 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb44180aef3a3096479255b30e330c5d = $(`<div id="html_bb44180aef3a3096479255b30e330c5d" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 49<br>robo: 3<br>hurto: 2<br>vandalismo: 6<br>Fecha: 01/10/2021</div>`)[0];
+                popup_138c60c84e4ef96a6e5b9c06e08e7452.setContent(html_bb44180aef3a3096479255b30e330c5d);
+            
+        
+
+        marker_325626707adeb35537dc41bb8406dbc2.bindPopup(popup_138c60c84e4ef96a6e5b9c06e08e7452)
+        ;
+
+        
+    
+    
+            var marker_a6a9e29b5eb50b631f3f91f9791f137a = L.marker(
+                [-31.445382761058468, -64.25157130516126],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_89bf72520b93e1a822e0b3f0f4413e40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c14d7e2fdc8832e82c33e5adbdb27b0 = $(`<div id="html_8c14d7e2fdc8832e82c33e5adbdb27b0" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 50<br>robo: 6<br>hurto: 9<br>vandalismo: 9<br>Fecha: 21/01/2011</div>`)[0];
+                popup_89bf72520b93e1a822e0b3f0f4413e40.setContent(html_8c14d7e2fdc8832e82c33e5adbdb27b0);
+            
+        
+
+        marker_a6a9e29b5eb50b631f3f91f9791f137a.bindPopup(popup_89bf72520b93e1a822e0b3f0f4413e40)
+        ;
+
+        
+    
+    
+            var marker_d6128367a0e3ff2a6e0c3ec3e2b02ea8 = L.marker(
+                [-31.45174115142623, -64.25032376556946],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_523ec5ec3c4275c355e2794a8f17da38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a535f048075d9d16fe95bfc3f3aa45cb = $(`<div id="html_a535f048075d9d16fe95bfc3f3aa45cb" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 51<br>robo: 9<br>hurto: 9<br>vandalismo: 2<br>Fecha: 06/03/2013</div>`)[0];
+                popup_523ec5ec3c4275c355e2794a8f17da38.setContent(html_a535f048075d9d16fe95bfc3f3aa45cb);
+            
+        
+
+        marker_d6128367a0e3ff2a6e0c3ec3e2b02ea8.bindPopup(popup_523ec5ec3c4275c355e2794a8f17da38)
+        ;
+
+        
+    
+    
+            var marker_c4349dcc282cbd774c0a13612bfbf852 = L.marker(
+                [-31.439395071777405, -64.25005197888945],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_c036492de61161e8888471e35fc98c09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3de420bf9ea28d2bdb598625e909ba97 = $(`<div id="html_3de420bf9ea28d2bdb598625e909ba97" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 52<br>robo: 10<br>hurto: 1<br>vandalismo: 6<br>Fecha: 21/01/2015</div>`)[0];
+                popup_c036492de61161e8888471e35fc98c09.setContent(html_3de420bf9ea28d2bdb598625e909ba97);
+            
+        
+
+        marker_c4349dcc282cbd774c0a13612bfbf852.bindPopup(popup_c036492de61161e8888471e35fc98c09)
+        ;
+
+        
+    
+    
+            var marker_ef026ac736aecfb98482e64f284683cb = L.marker(
+                [-31.4382846626088, -64.24961897818886],
+                {}
+            ).addTo(map_8c0e55e738d46458c766b084e7eb0e83);
+        
+    
+        var popup_bab4f0671cc161cc7a15d1520acb62e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_652c803d56ff736d24f8846383fd431d = $(`<div id="html_652c803d56ff736d24f8846383fd431d" style="width: 100.0%; height: 100.0%;">Fábrica: fabrica 53<br>robo: 10<br>hurto: 10<br>vandalismo: 3<br>Fecha: 09/02/2021</div>`)[0];
+                popup_bab4f0671cc161cc7a15d1520acb62e5.setContent(html_652c803d56ff736d24f8846383fd431d);
+            
+        
+
+        marker_ef026ac736aecfb98482e64f284683cb.bindPopup(popup_bab4f0671cc161cc7a15d1520acb62e5)
+        ;
+
+        
+    
+</script>
+</html>
